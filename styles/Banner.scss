@@ -1,0 +1,52 @@
+@use '../utils/variables';
+
+// local variables
+
+
+.banner{
+    width: 100vw;
+    height: 90vh;
+    background: variables.$banner-grad;
+    // position:relative;
+    display: grid;
+    place-content: center;
+    text-align: center;
+
+    h1{
+        font-size: 5.5rem;
+        margin:1rem auto;
+        -webkit-text-stroke: 2px variables.$sky-blue;
+        -webkit-text-fill-color:transparent;
+        transition-delay: 500ms;
+        animation: blink 3000ms linear infinite alternate;
+    }
+    @keyframes blink {
+        from{
+            letter-spacing: 6px;
+            text-shadow: 0 0 6px variables.$sky-blue;
+        }
+        to{
+            letter-spacing: 10px;
+            text-shadow: 0 0 6px variables.$light-hot-pink;
+        }
+    }
+    p{
+        font-size: 1.8rem;
+        color:white;
+        position: relative;
+        width:fit-content;
+        margin:0 auto;
+
+        span{
+            position: absolute;
+            width:calc(100% );
+            top:3rem;
+            text-align: center;
+            left:0;
+            height:3px;
+            border-radius: 0.5rem;
+            background: variables.$underline-grad;
+        }
+    }
+
+}

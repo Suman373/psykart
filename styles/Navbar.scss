@@ -1,0 +1,26 @@
+@use '../utils/variables';
+
+.navbar {
+    width: 100vw;
+    height: 5rem;
+
+    ul {
+        height:100%;
+        width:95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #logo{
+            font-size: 1.8rem;
+            margin:0 2rem;
+        }
+        div{
+            button{
+                font-size: 1.2rem;
+                padding:0.5rem 1rem;
+                margin:0 1rem;
+            }
+        }
+    }
+}

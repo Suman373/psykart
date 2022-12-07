@@ -16,3 +16,10 @@ a {
     background: black;
   }
 }
+body{
+  overflow-x: hidden;
+}
+.App{
+  min-height: 100vh;
+  width:100vw;
+}
