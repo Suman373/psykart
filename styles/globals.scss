@@ -1,25 +1,26 @@
 // import font families here
+
+// global vars
+@use '../utils/variables';
+
 *,*::before,*::after{
     box-sizing: border-box;
     margin:0;
     padding:0;
 }
+html{
+scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
+
 body{
   overflow-x: hidden;
+  background:variables.$dark-shade;
 }
 .App{
   min-height: 100vh;
   width:100vw;
+  font-family: sans-serif;
 }
