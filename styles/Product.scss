@@ -1,10 +1,84 @@
 @use '../utils/variables';
 
 .product-card{
-    height:15rem;
+    user-select: none;
+    height:23rem;
     width:20rem;
-    background:grey;
+    background:variables.$underline-grad;
+    background:variables.$sky-blue;
     margin:1rem;
     position: relative;
+    // border:2px solid variables.$sky-blue;
+    background: variables.$translucent-blue;
+    border-radius: 0.8rem;
+    display: grid;
+    place-content: center;
+    gap:0.8rem;
+    img{
+        height:10rem;
+        width:95%;
+        margin: 0 auto;
+        border-radius: 0.5rem;
+    }
+    .header{
+        width:20rem;
+        height:3rem;
+        display: flex;
+        align-items: center;
+        padding:0 1rem;
+        justify-content: space-between;
+        h2{
+            font-size: 1.5rem;
+            background:variables.$underline-grad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        i{
+            font-size: 1.5rem;
+            cursor: pointer;
+
+            &:hover{
+                transform:scale(1.2);
+                transition: 400ms;
+                filter:drop-shadow(0 0 2px variables.$sky-blue);
+            }
+        }
+        .unsaved{
+            color: #ffffff;
+        }
+        .saved{
+            color:variables.$heart-red;
+        }
+    }
+    p{
+        font-size: 1.1rem;
+        color:#ffffff;
+        margin-left:1rem;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0.5rem;
+        gap:2rem;
+        
+        button{
+            font-size: 1rem;
+            padding:0.6rem 1rem;
+            outline:none; border: none;
+            border-radius: 0.8rem;
+            color:#ffffff;
+            background:variables.$deep-blue;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.08);
+                transition: all 100ms;
+                color:variables.$deep-blue;
+                background: white;
+                outline:2px solid variables.$deep-blue ;
+            }
+        }
+    }
+
     
 }

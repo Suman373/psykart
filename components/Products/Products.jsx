@@ -8,49 +8,56 @@ const Products = () => {
       price: '500',
       currency: 'USD',
       discount: '20%',
-      size: 'XXL'
+      size: 'XXL',
+      favourite:true,
     },
     {
       name: "DENIM tee",
       price: '780',
       currency: 'USD',
       discount: '30%',
-      size: 'L'
+      size: 'L',
+      favourite:false,
     },
     {
       name: "YODAA tee",
       price: '200',
       currency: 'USD',
       discount: '20%',
-      size: 'XL'
+      size: 'XL',
+      favourite:true,
     },
     {
       name: "+CLS tee",
       price: '500',
       currency: 'USD',
       discount: '10%',
-      size: 'M'
+      size: 'M',
+      favourite:true,
     },
     {
       name: "+CLS tee",
       price: '500',
       currency: 'USD',
       discount: '10%',
-      size: 'M'
+      size: 'M',
+      favourite:false,
     },
     {
       name: "+CLS tee",
       price: '500',
       currency: 'USD',
       discount: '10%',
-      size: 'M'
+      size: 'M',
+      favourite:true,
     },
     {
       name: "+CLS tee",
       price: '500',
       currency: 'USD',
       discount: '10%',
-      size: 'M'
+      size: 'M',
+      favourite:false,
     },
   ]
 
