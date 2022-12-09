@@ -4,9 +4,7 @@ import cardImage from '../../public/assets/bannerimage.webp';
 import { BsFillSuitHeartFill } from 'react-icons/bs';
 
 const Product = ({ prod }) => {
-
-    console.log(prod.favourite);
-
+    
     return (
         <div className='product-card' >
             <Image src={cardImage} alt="Product from store" />
