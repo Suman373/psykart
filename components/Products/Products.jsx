@@ -1,65 +1,65 @@
 import React from 'react';
 import Product from '../ProductItem/Product';
 
-const Products = () => {
-  let products = [
-    {
-      name: "Nike tee",
-      price: '500',
-      currency: 'USD',
-      discount: '20%',
-      size: 'XXL',
-      favourite:true,
-    },
-    {
-      name: "DENIM tee",
-      price: '780',
-      currency: 'USD',
-      discount: '30%',
-      size: 'L',
-      favourite:false,
-    },
-    {
-      name: "YODAA tee",
-      price: '200',
-      currency: 'USD',
-      discount: '20%',
-      size: 'XL',
-      favourite:true,
-    },
-    {
-      name: "+CLS tee",
-      price: '500',
-      currency: 'USD',
-      discount: '10%',
-      size: 'M',
-      favourite:true,
-    },
-    {
-      name: "+CLS tee",
-      price: '500',
-      currency: 'USD',
-      discount: '10%',
-      size: 'M',
-      favourite:false,
-    },
-    {
-      name: "+CLS tee",
-      price: '500',
-      currency: 'USD',
-      discount: '10%',
-      size: 'M',
-      favourite:true,
-    },
-    {
-      name: "+CLS tee",
-      price: '500',
-      currency: 'USD',
-      discount: '10%',
-      size: 'M',
-      favourite:false,
-    },
-  ]
+const Products = ({products}) => {
+  // let products = [
+  //   {
+  //     name: "Nike tee",
+  //     price: '500',
+  //     currency: 'USD',
+  //     discount: '20%',
+  //     size: 'XXL',
+  //     favourite:true,
+  //   },
+  //   {
+  //     name: "DENIM tee",
+  //     price: '780',
+  //     currency: 'USD',
+  //     discount: '30%',
+  //     size: 'L',
+  //     favourite:false,
+  //   },
+  //   {
+  //     name: "YODAA tee",
+  //     price: '200',
+  //     currency: 'USD',
+  //     discount: '20%',
+  //     size: 'XL',
+  //     favourite:true,
+  //   },
+  //   {
+  //     name: "+CLS tee",
+  //     price: '500',
+  //     currency: 'USD',
+  //     discount: '10%',
+  //     size: 'M',
+  //     favourite:true,
+  //   },
+  //   {
+  //     name: "+CLS tee",
+  //     price: '500',
+  //     currency: 'USD',
+  //     discount: '10%',
+  //     size: 'M',
+  //     favourite:false,
+  //   },
+  //   {
+  //     name: "+CLS tee",
+  //     price: '500',
+  //     currency: 'USD',
+  //     discount: '10%',
+  //     size: 'M',
+  //     favourite:true,
+  //   },
+  //   {
+  //     name: "+CLS tee",
+  //     price: '500',
+  //     currency: 'USD',
+  //     discount: '10%',
+  //     size: 'M',
+  //     favourite:false,
+  //   },
+  // ]
 
   return (
     <>

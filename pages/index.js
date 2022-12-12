@@ -11,7 +11,7 @@ const Home = ({products, bannerData}) => {
     <main className='App'>
       <Navbar/>
       <Banner/>
-      <Products/>
+      <Products products={products}/>
     </main>
   );
 }
