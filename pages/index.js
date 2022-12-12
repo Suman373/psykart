@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import {client} from '../lib/client';
 import Banner from '../components/Banner/Banner';
 import Navbar from '../components/Navbar/Navbar';
@@ -9,6 +10,10 @@ const Home = ({products, bannerData}) => {
   // data from server -> async func from bottom -> props passed to this page -> render data in the component dynamically
   return (
     <main className='App'>
+      <Head>
+        <title>Psykart</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Navbar/>
       <Banner/>
       <Products products={products}/>

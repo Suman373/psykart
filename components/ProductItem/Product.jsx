@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import cardImage from '../../public/assets/bannerimage.webp';
 import { BsFillSuitHeartFill } from 'react-icons/bs';
+import {FaInfo} from 'react-icons/fa';
 
 const Product = ({ prod }) => {
     
@@ -16,7 +17,7 @@ const Product = ({ prod }) => {
             </div>
             <p>Price : {prod.price} <span>{prod.currency}</span></p>
             <p>Size : {prod?.size}</p>
-            {/* <p>{prod?.discount}</p> */}
+            <p>{prod?.details}</p>
             <div className="button-container">
                 <button>Add to cart</button>
                 <button>Buy now</button>
